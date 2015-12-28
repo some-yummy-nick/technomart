@@ -1,0 +1,24 @@
+.logo {
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 42px;
+    background: $color-red;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        height: 5px;
+        width: 100%;
+         background: $color-red;
+        box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+    }
+}

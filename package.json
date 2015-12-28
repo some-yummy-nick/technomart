@@ -1,5 +1,5 @@
 {
-  "name": "oneluke",
+  "name": "technomart",
   "version": "0.1.0",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
@@ -7,19 +7,21 @@
     "csscomb": "^3.1.8",
     "gulp": "^3.9.0",
     "gulp-changed": "^1.3.0",
-    "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-csscomb": "^3.0.6",
+    "gulp-cssnano": "^2.0.0",
     "gulp-htmlmin": "^1.2.0",
     "gulp-imagemin": "^2.3.0",
-    "gulp-minify-css": "^1.2.0",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
+    "gulp-rimraf": "^0.2.0",
     "gulp-sass": "^2.0.4",
     "gulp-svgmin": "^1.2.0",
     "gulp-svgstore": "^5.0.5",
     "gulp-uglify": "^1.4.2",
-    "imagemin-pngquant": "^4.2.0"
+    "imagemin-pngquant": "^4.2.0",
+    "normalize-scss": "^4.0.3",
+    "normalize.css": "^3.0.3"
   }
 }
