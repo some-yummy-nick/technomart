@@ -1,0 +1,17 @@
+{
+  "name": "new",
+  "main": "gulpfile.js",
+  "authors": [
+    "Марат Шаймарданов"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "source/bower_components",
+    "test",
+    "tests"
+  ],
+}

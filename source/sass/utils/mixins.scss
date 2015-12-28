@@ -1,0 +1,27 @@
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%no-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+%no-decor{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@mixin inline-block($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}
