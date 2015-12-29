@@ -19,6 +19,8 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     rimraf = require('rimraf'),
     nano = require('gulp-cssnano'),
+    spritesmith = require('gulp.spritesmith'),
+    ncu = require('npm-check-updates'),
     path = require('path');
 
 gulp.task('default', ['watch', 'browserSync', 'sass', 'html', 'js', 'image']);
@@ -103,6 +105,20 @@ gulp.task('svg', function () {
         .pipe(gulp.dest('source/img/'));
 });
 
+gulp.task('sprite', function () {
+    var spriteData =
+        gulp.src('source/img/features-sprite/*.*') // путь, откуда берем картинки для спрайта
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.scss',
+            cssFormat: 'scss',
+            imgPath: '../img/sprite.png'
+        }));
+
+    spriteData.img.pipe(gulp.dest('build/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('source/sass/sprite/')); // путь, куда сохраняем стили
+});
+
 gulp.task('browserSync', function () {
     browserSync({
         server: {
@@ -112,9 +128,6 @@ gulp.task('browserSync', function () {
     });
 });
 
-gulp.task('clean', function () {
-    return gulp.src('build', {
-            read: false
-        })
-        .pipe(rimraf());
+gulp.task('clean', function (cb) {
+    rimraf('./build', cb);
 });

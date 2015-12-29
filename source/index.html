@@ -19,88 +19,12 @@
 </head>
 
 <body>
+    //= template/svg.html
+    <!-- -->
     //= template/header.html
-    <header class="header">
-        <div class="header__top-bg">
-            <div class="wrapper">
-                <div class="header__top">
-                    <div>
-                        <a class="logo" href="#">Техномарт</a>
-                    </div>
-                    <div>
-                        <form class="header__search" action="/echo" method="post">
-                            <button type="button"></button>
-                            <input type="text" name="query" placeholder="Поиск">
-                        </form>
-                    </div>
-                    <div class="header__bookmark">
-                        <a href="">Закладки:0</a>
-                    </div>
-                    <div class="header__basket">
-                        <a href="">Корзина:0</a>
-                    </div>
-                    <div class="header__order">
-                        <a href="">Оформить заказ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="header__bottom">
-
-                <div class="header__decription">
-                    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                </div>
-                <div>
-                    <div class="header__phone">
-                        <p>+7 (495) 555-05-55</p>
-                    </div>
-                    <p>г. Москва, ул. Строителей д.15</p>
-                </div>
-                <div class="header__user">
-                    <div class="header__login">
-                        <p>Марат Шаймарданов</p>
-                        <a href="">Мои заказы</a>
-                        <a href="">Личный кабинет</a>
-                    </div>
-                    <div class="header__guest">
-                        <a href="">Войти</a>
-                        <a href="">Регистрация</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <a href="">Главная</a>
-                    </li>
-                    <li>
-                        <a href="">Компания</a>
-                    </li>
-                    <li>
-                        <a href="">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="">Новости</a>
-                    </li>
-                    <li>
-                        <a href="">Спецпредложения</a>
-                    </li>
-                    <li>
-                        <a href="">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <div class="wrapper">
         <div class="features">
-            <div class="features__item  features__item--materials">
+            <div class="features__item  features__item--materials item--flag">
                 <p>Материалы</p>
                 <a href="">На любой вкус</a>
             </div>
@@ -129,7 +53,6 @@
                     <p>Соседям на радость</p>
                     <a href="">Открыть каталог</a>
                 </div>
-
             </div>
             <div class="features__item  features__item--discount">
                 <p>Скидки 50%</p>
@@ -139,9 +62,78 @@
                 <p>Доставка</p>
                 <a href="">Бесплатно</a>
             </div>
-
+        </div>
+        <div class="popular">
+            <h2 class="primare-title">Популярные товары</h2>
+            <a href="" class="button">Все популярные товары</a>
+        </div>
+        <div class="popular__items">
+            <div class="popular__item">
+                <div class="popular__image">
+                    <img src="img/popular-item-1.jpg" alt="popular-item">
+                </div>
+                <h3 class="popular__title">Перфоратор BOSCH BFG 9000</h3>
+                <p class="popular__old-price">32 500 Р.</p>
+                <div class="popular__new-price">25 500 Р.</div>
+                <div class="popular__options">
+                    <a href="" class="popular__basket">
+                        <svg class="">
+                            <use xlink:href="#basket"></use>
+                        </svg>Купить</a>
+                    <a href="" class="popular__bookmark">В закладки</a>
+                </div>
+            </div>
+            <div class="popular__item">
+                <div class="popular__image">
+                    <img src="img/popular-item-2.jpg" alt="popular-item">
+                </div>
+                <h3 class="popular__title">Перфоратор BOSCH BFG 3000</h3>
+                <p class="popular__old-price">22 500 Р.</p>
+                <div class="popular__new-price">15 500 Р.</div>
+                <div class="popular__options">
+                    <a href="" class="popular__basket">
+                        <svg class="">
+                            <use xlink:href="#basket"></use>
+                        </svg>Купить</a>
+                    <a href="" class="popular__bookmark">В закладки</a>
+                </div>
+            </div>
+            <div class="popular__item">
+                <div class="popular__image">
+                    <img src="img/popular-item-3.jpg" alt="popular-item">
+                </div>
+                <h3 class="popular__title">Перфоратор BOSCH BFG 6000</h3>
+                <p class="popular__old-price">30 500 Р.</p>
+                <div class="popular__new-price">25 500 Р.</div>
+                <div class="popular__options">
+                    <a href="" class="popular__basket">
+                        <svg class="">
+                            <use xlink:href="#basket"></use>
+                        </svg>
+                        Купить</a>
+                    <a href="" class="popular__bookmark">В закладки</a>
+                </div>
+            </div>
+            <div class="popular__item">
+                <div class="popular__image">
+                    <img src="img/popular-item-4.jpg" alt="popular-item">
+                </div>
+                <h3 class="popular__title">Перфоратор BOSCH BFG 2000</h3>
+                <p class="popular__old-price"></p>
+                <div class="popular__new-price">12 500 Р.</div>
+                <div class="popular__options">
+                    <a href="" class="popular__basket">
+                        <svg class="">
+                            <use xlink:href="#basket"></use>
+                        </svg>Купить</a>
+                    <a href="" class="popular__bookmark">В закладки</a>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
     <script src="js/script.js"></script>
 </body>
 

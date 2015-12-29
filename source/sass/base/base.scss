@@ -16,5 +16,33 @@ body {
 
 .wrapper {
     max-width: 940px;
-    margin: auto;
+    min-height: 1px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (min-width: $width-lg) {
+        padding: 0;
+    }
+}
+
+.primare-title {
+    
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-blue;
+        @media (min-width: $width-md) {
+        float: left;
+        }
+}
+
+.item {
+    &--flag {
+        &:before {
+            right: 0;
+            top: 0;
+            @include sprite($features-flag);
+        }
+    }
 }

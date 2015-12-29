@@ -1,11 +1,25 @@
 .features {
     color: #fff;
+    margin-top: 70px;
+    min-height: 1px;
+    @extend %clearfix;
     &__item {
-        float: left;
+        margin: auto;
+        position: relative;
         width: 300px;
         height: 123px;
         padding: 20px;
         margin-bottom: 20px;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: 40px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+        }
         p {
             font-size: 24px;
             margin: 0;
@@ -23,33 +37,64 @@
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
+                background: rgba(000, 000, 000, 0.33);
             }
         }
         &--materials {
             background: #f6b22d;
-            margin-right: 20px;
+            &:after {
+                @include sprite($features-1);
+            }
         }
         &--tools {
             background-color: #4aafde;
-            margin-right: 20px;
+            &:after {
+                @include sprite($features-2);
+            }
         }
         &--technics {
             background-color: #cc79d1;
+            &:after {
+                @include sprite($features-3);
+            }
         }
         &--discount {
-            float: right;
             background-color: #85d179;
+            &:after {
+                @include sprite($features-4);
+            }
         }
         &--delivery {
-            float: right;
             background: #f6b22d;
+            &:after {
+                @include sprite($features-5);
+            }
+        }
+    }
+    @media (min-width: $width-lg) {
+        &__item {
+            float: left;
+            &--materials {
+                margin-right: 20px;
+            }
+            &--tools {
+                margin-right: 20px;
+            }
+            &--discount {
+                float: right;
+            }
+            &--delivery {
+                float: right;
+            }
         }
     }
 }
 
 .slider {
     position: relative;
-    width: 620px;
+    width: 100%;
+    max-width: 620px;
+    overflow: hidden;
     height: 266px;
     padding: 0;
     input {
@@ -135,13 +180,18 @@
             width: 195px;
             height: 38px;
             line-height: 18px;
-            background-color: #b72f38;
+            background-color: $color-red;
+            &:hover {
+                background-color: darken($color-red, 5%);
+            }
         }
         &--1 {
             background: url(../img/slider-1.jpg) no-repeat;
+            background-size: contain;
         }
         &--2 {
             background: url(../img/slider-2.jpg) no-repeat;
+            background-size: contain;
         }
     }
 }
