@@ -24,25 +24,3 @@ body {
         padding: 0;
     }
 }
-
-.primare-title {
-    
-    font-family: Cuprum;
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-blue;
-        @media (min-width: $width-md) {
-        float: left;
-        }
-}
-
-.item {
-    &--flag {
-        &:before {
-            right: 0;
-            top: 0;
-            @include sprite($features-flag);
-        }
-    }
-}

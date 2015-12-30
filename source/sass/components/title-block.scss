@@ -1,0 +1,36 @@
+.title-block {
+    background-color: #f7f3ec;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: 'Open Sans';
+    @extend %clearfix;
+    @media (min-width: $width-md) {
+        padding-bottom: 0;
+    }
+    &__header {
+        max-width: 450px;
+        text-align: center;
+        font-family: Cuprum;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-blue;
+        margin: auto;
+        margin-top: 20px;
+        @media (min-width: $width-md) {
+            float: left;
+            line-height: 89px;
+            margin-top: 0;
+        }
+    }
+    &--producers {
+        @media (max-width: 715px) {
+            .title-block__header, .button--title-block {
+                float: none;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+}

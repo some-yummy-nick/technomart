@@ -1,0 +1,43 @@
+.aboutUs {
+    @extend %clearfix;
+    padding-bottom: 85px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    &__content {
+        float: left;
+        width: 540px;
+    }
+    &__contacts {
+        float: right;
+        width: 300px;
+    }
+    ul {
+        margin-top: 25px;
+        @extend %no-list;
+        li {
+            position: relative;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            font-size: 18px;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: -35px;
+                width: 25px;
+                height: 2px;
+                background-color: #fb565a;
+            }
+        }
+    }
+    @media (max-width: 897px) {
+        &__content,
+        &__contacts {
+            float: none;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.producers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    &__item {
+        position: relative;
+        width: 220px;
+        height: 145px;
+        margin-top: 20px;
+        background-color: white;
+        border: 1px solid #e5e5e5;
+        &:hover {
+            box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+        }
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}

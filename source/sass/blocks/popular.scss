@@ -1,28 +1,22 @@
 .popular {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     min-height: 89px;
     margin-top: 40px;
-    background-color: #f7f3ec;
-    padding-left: 20px;
-    font-family: 'Open Sans';
     font-size: 16px;
     text-align: center;
     font-weight: 600;
-    padding-right: 20px;
     @extend %clearfix;
-    &__items {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: center;
-    }
     &__item {
         position: relative;
         width: 220px;
         border: 1px solid #e5e5e5;
         padding-bottom: 20px;
+        margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
         &:hover {
@@ -108,36 +102,15 @@
             fill: #fff;
         }
         &:hover {
-            background-color: darken(#63a63e, 30%);
-            box-shadow: inset 0 -3px 0 darken(#63a63e, 30%);
+            background-color: darken(#63a63e, 10%);
+            box-shadow: inset 0 -3px 0 darken(#63a63e, 10%);
         }
     }
     &__bookmark {
         border: 3px solid #63a63e;
         color: #32425c;
-    }
-}
-
-.button {
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: 253px;
-    height: 38px;
-    margin-top: 25px;
-    line-height: 38px;
-    font-family: Cuprum;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-    background-color: $color-red;
-    margin-bottom: 20px;
-    &:hover {
-        text-decoration: underline;
-        background: darken($color-red, 10%);
-    }
-    @media (min-width: $width-md) {
-        float: right;
+        &:hover {
+            border-color: darken(#63a63e, 10%);
+        }
     }
 }

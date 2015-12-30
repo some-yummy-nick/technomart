@@ -36,7 +36,7 @@
                 <p>Техника</p>
                 <a href="">Для стройки</a>
             </div>
-            <div class="features__item  slider">
+            <div class="slider">
                 <input type="radio" id="btn-1" name="toggle" checked="">
                 <input type="radio" id="btn-2" name="toggle">
                 <div class="slider__controls">
@@ -46,12 +46,12 @@
                 <div class="slider__image slider__image--1">
                     <h2 class="slider__title">Перфораторы</h2>
                     <p>Настоящие мужские игрушки</p>
-                    <a href="">Открыть каталог</a>
+                    <a class="button  button--slider" href="">Открыть каталог</a>
                 </div>
                 <div class="slider__image  slider__image--2">
                     <h2 class="slider__title">Дрели</h2>
                     <p>Соседям на радость</p>
-                    <a href="">Открыть каталог</a>
+                    <a class="button button--slider" href="">Открыть каталог</a>
                 </div>
             </div>
             <div class="features__item  features__item--discount">
@@ -63,11 +63,15 @@
                 <a href="">Бесплатно</a>
             </div>
         </div>
-        <div class="popular">
-            <h2 class="primare-title">Популярные товары</h2>
-            <a href="" class="button">Все популярные товары</a>
+
+
+
+
+        <div class="title-block">
+            <h2 class="title-block__header">Популярные товары</h2>
+            <a href="" class="button button--title-block">Все популярные товары</a>
         </div>
-        <div class="popular__items">
+        <div class="popular">
             <div class="popular__item">
                 <div class="popular__image">
                     <img src="img/popular-item-1.jpg" alt="popular-item">
@@ -114,7 +118,7 @@
                     <a href="" class="popular__bookmark">В закладки</a>
                 </div>
             </div>
-            <div class="popular__item">
+            <div class="popular__item  item--flag">
                 <div class="popular__image">
                     <img src="img/popular-item-4.jpg" alt="popular-item">
                 </div>
@@ -130,10 +134,142 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <div class="title-block  title-block--producers">
+            <h2 class="title-block__header">Популярные производители</h2>
+            <a href="" class="button button--title-block">Все производители</a>
+        </div>
+        <div class="producers">
+            <div class="producers__item">
+                <img src="img/producers-item-1.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-2.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-3.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-4.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-5.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-6.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-7.jpg" alt="producers-item">
+            </div>
+            <div class="producers__item">
+                <img src="img/producers-item-8.jpg" alt="producers-item">
+            </div>
+        </div>
     </div>
 
 
 
+
+    <div class="services">
+        <div class="wrapper">
+            <div class="services__title">Сервисы</div>
+            <p class="content-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <input type="radio" name="btn-controls" value="delivery" id="delivery" checked="">
+            <input type="radio" name="btn-controls" value="guarantee" id="guarantee">
+            <input type="radio" name="btn-controls" value="credit" id="credit">
+            <div class="services__controls">
+                <label for="delivery">Доставка</label>
+                <label for="guarantee">Гарантия</label>
+                <label for="credit">Кредит</label>
+            </div>
+            <div class="services__slides">
+                <div class="services__slide">
+                    <h3>Доставка</h3>
+                    <p class="content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </div>
+                <div class="services__slide">
+                    <h3>Гарантия</h3>
+                    <p class="content-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                </div>
+                <div class="services__slide">
+                    <h3>Кредит</h3>
+                    <p class="content-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                    <a class="button  button--services" href="">Отправить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <div class="aboutUs">
+            <div class="aboutUs__content">
+                <h2>Компания "Техномарт"</h2>
+                <p class="content-text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                <p class="content-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+                <ul>
+                    <li>Деловые линии</li>
+                    <li>Автотрейдинг</li>
+                    <li>ЖэлДорЭкспедиция</li>
+                </ul>
+                <a href="" class="button  button--content">Подробнее о компании</a>
+            </div>
+            <div class="aboutUs__contacts">
+                <h2>Контакты</h2>
+                <p class="content-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+                <div id="myMap" style="width:300px; height:157px"></div>
+                <a href="" class="button  button--contacts">Заблудились? Напишите нам</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <a class="logo" href="#">Техномарт</a>
+                <p class="footer__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+                <ul class="footer__menu">
+                    <li>Компания</li>
+                    <li>Новости</li>
+                    <li>Каталог</li>
+                    <li>Доставка</li>
+                    <li>Контакты</li>
+                </ul>
+                <ul class="footer__menu">
+                    <li>Материалы</li>
+                    <li>Техника</li>
+                    <li>Инструмент</li>
+                    <li>Спецпредложения</li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>© 2010-2015 Компания «Техномарт» Все права защищены</p>
+                </div>
+                <div class="footer__social"></div>
+
+                <div class="footer__connect">
+                    <h3>Обратная связь:</h3>
+                    <a href="">info@technomart.ru</a>
+                </div>
+                <div class="footer__connect">
+                    <h3>Дизайн сайта —</h3>
+                    <a href="">www.Glukhanko.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;onload=init"></script>
     <script src="js/script.js"></script>
 </body>
 

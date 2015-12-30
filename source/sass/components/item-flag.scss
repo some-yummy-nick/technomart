@@ -1,0 +1,12 @@
+.item {
+    &--flag {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include sprite($features-flag);
+        }
+    }
+}
