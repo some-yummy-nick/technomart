@@ -25,3 +25,10 @@
     display: inline-block;
     vertical-align: $valign;
 }
+
+@mixin margin($margin-right:20px) {
+    margin-right: $margin-right;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

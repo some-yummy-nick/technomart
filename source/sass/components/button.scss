@@ -13,8 +13,9 @@
     line-height: 38px;
     font-family: Cuprum;
     font-weight: 400;
+    transition: background 0.2s linear;
     &:hover {
-        background-color: darken($color-red, 5%);
+        background: darken($color-red, 5%);
         text-decoration: underline;
     }
     &--slider {
@@ -34,7 +35,7 @@
         margin: inherit;
     }
     &--services {
-         margin: inherit;
+        margin: inherit;
     }
     &--contacts {
         width: 300px;
