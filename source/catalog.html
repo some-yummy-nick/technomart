@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Technomart-catalog</title>
+    <meta content="" name="description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Cuprum:400,700", "Open Sans:300,600,400"]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    //= template/svg.html
+    <!-- -->
+    //= template/header.html
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="">Инструменты</a>
+            </li>
+            <li class="breadcrumbs__item">
+                Перфораторы
+            </li>
+        </ul>
+        <section class="perforators">
+            <h1 class="perforators__title">Перфораторы</h1>
+            <div class="perforators__filters">
+                Фильтр
+                <div class="filters__name">Цена</div>
+                <div class="filters__range"></div>
+                <div class="filters__name">Производители</div>
+                <div class="filters__block">
+                    <input type="checkbox" name="bosh" id="bosh">
+                    <label for="bosh" class="filters__producers">
+                        Bosh
+                    </label>
+                </div>
+                <div class="filters__block">
+                    <input type="checkbox" name="interskol" id="interskol">
+                    <label for="interskol" class="filters__producers">
+                        Интерскол
+                    </label>
+                </div>
+                <div class="filters__block">
+                    <input type="checkbox" name="makita" id="makita">
+                    <label for="makita" class="filters__producers">
+                        Макита
+                    </label>
+                </div>
+                <div class="filters__block">
+                    <input type="checkbox" name="dewalt" id="dewalt">
+                    <label for="interskol" class="filters__producers">
+                        Dewalt
+                    </label>
+                </div>
+                <div class="filters__block">
+                    <input type="checkbox" name="hitachi" id="hitachi">
+                    <label for="hitachi" class="filters__producers">
+                        Hitachi
+                    </label>
+                </div>
+                <div class="filters__name">Питание</div>
+                <div class="filters__block">
+                    <input type="radio" name="supply" id="batteries">
+                    <label for="batteries" class="filters__producers">
+                        Аккумуляторные
+                    </label>
+                </div>
+                <div class="filters__block">
+                    <input type="radio" name="supply" id="network">
+                    <label for="network" class="filters__producers">
+                        Сетевое
+                    </label>
+                </div>
+            </div>
+            <div class="perforators__catalog">
+                <div class="perforators__sort">
+                    Сортировка
+                    <ul>
+                        <li>
+                            <button type="button">По цене</button>
+                        </li>
+                        <li>
+                            <button type="button">По типу</button>
+                        </li>
+                        <li>
+                            <button type="button">По функционалу</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paginator">
+                <a href="" class="paginator__item">1</a>
+                <a href="" class="paginator__item">2</a>
+                <a href="" class="paginator__item">3</a>
+            </div>
+        </section>
+        <section class="decription">
+            <div class="wrapper">
+                <h2>Пара слов о перфораторах</h2>
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            </div>
+        </section>
+    </div>
+    //= template/footer.html
+</body>
+
+</html>
