@@ -1,0 +1,56 @@
+.perforators {
+    &__title {
+        width: 100%;
+        color: $color-blue;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    &__content {
+        @extend %clearfix;
+    }
+    &__catalog {}
+    &__sort {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 240px;
+        min-width: 220px;
+        text-transform: uppercase;
+        padding-left: 20px;
+        background: $color-sepia;
+        line-height: 38px;
+        ul {
+            width: 500px;
+            @extend %no-list;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li {
+                @include inline-block();
+                //                @include margin(80px);
+                button {
+                    border: none;
+                    background: inherit;
+                    text-transform: uppercase;
+                    svg {
+                        width: 9px;
+                        height: 15px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:705px) {
+        &__sort {
+            flex-wrap: wrap;
+        }
+    }
+    @media (max-width:500px) {
+        &__sort{
+            margin-left: 0;
+        }
+        }
+}

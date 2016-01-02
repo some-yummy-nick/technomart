@@ -5,6 +5,9 @@
 @import "base/base";
 @import "blocks/header";
 @import "blocks/logo";
+@import "components/breadcrumbs";
+@import "blocks/perforators";
+@import "components/filters";
 @import "blocks/features";
 @import "components/item-flag";
 @import "components/slider";
@@ -12,6 +15,8 @@
 @import "blocks/popular";
 @import "components/title-block";
 @import "components/content-text";
+@import "components/paginator";
+@import "blocks/decription";
 @import "blocks/producers";
 @import "blocks/services";
 @import "blocks/aboutUs";

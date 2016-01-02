@@ -1,0 +1,33 @@
+.breadcrumbs {
+    @extend %no-list;
+    font-family: "Open Sans";
+    font-size: 12px;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__item {
+        @include inline-block();
+        @include margin(20px);
+        position: relative;
+        &-home {
+            width: 14px;
+            height: 14px;
+            fill: #c1c6ce;
+        }
+        svg:not(.breadcrumbs__item-home) {
+            @include inline-block();
+            left: 20px;
+            width: 12px;
+            height: 12px;
+            margin-top: 2px;
+            margin-left: 20px;
+            margin-left: 20px;
+            fill: #c1c6ce;
+        }
+    }
+}

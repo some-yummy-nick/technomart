@@ -1,0 +1,31 @@
+.paginator {
+    padding-left: 240px;
+    &__item {
+        @include inline-block();
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 12px;
+        line-height: 38px;
+        color: #000;
+        border: 1px solid #e5e5e5;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+            background: $color-red;
+            color: #fff;
+        }
+        &--next {
+            width: 140px;
+            &:hover{
+                background-color: #e5e5e5;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        padding-left: 0;
+        text-align: center;
+    }
+}
