@@ -20,8 +20,9 @@
 
 <body>
     //= template/svg.html
-    <!-- -->
+    <div class="overlay"></div>
     //= template/header.html
+
     <div class="wrapper">
         <div class="features">
             <div class="features__item  features__item--materials item--flag">
@@ -223,11 +224,12 @@
                 <h2>Контакты</h2>
                 <p class="content-text">Вы можете забрать товар сами, заехав в наш офис:</p>
                 <div id="myMap" style="width:300px; height:157px"></div>
-                <a href="" class="button  button--contacts">Заблудились? Напишите нам</a>
+                <a class="button  button--contacts" id="request">Заблудились? Напишите нам</a>
             </div>
         </div>
     </div>
-
+    //= template/popup.html
+    <!--    -->
     //= template/footer.html
 
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;onload=init"></script>
