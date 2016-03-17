@@ -43,8 +43,8 @@ function init(ymaps) {
         login.style.display = 'none';
         guest.style.display = 'block';
     });
-    
-   enterLogin.addEventListener("click", function () {
+
+    enterLogin.addEventListener("click", function () {
         login.style.display = 'block';
         guest.style.display = 'none';
     });
