@@ -1,6 +1,8 @@
 node_modules/
 source/bower_components/
 build/
+.idea/
+.publish/
 *.log
 Thumbs.db
 .DS_Store
